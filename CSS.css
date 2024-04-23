@@ -1,0 +1,562 @@
+/*index sayfası başladı*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+:root{
+    --maincolor:#F8F9F8;/*kullanılacak renkleri tanımladı*/
+    --black-color:#000000;
+    --ana_renk: #E2F2BB;
+    --ikinci_renk:#BFD48C;
+    --vurgu_renk:#E1EDC2;
+    --border:0.1rem solid rgb(255,255,255,0.4);}
+
+    *{font-family: "Poppins",sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: 0.2s ease;}
+a {color: black; /* Bağlantı rengini siyah olarak ayarlar */
+    text-decoration: none; /* Alt çizgiyi kaldırır */}
+
+/* base html codes*/
+html{font-size: 62.5%;/*piksel boyutu dönüştürdü*/
+    overflow-x:hidden;
+    scroll-padding-top: 9rem;/*kaydırma çubuğu*/
+    scroll-behavior: smooth;}
+html::-webkit-scrollbar{width: 0.8rem;
+    background-color:#ffffff;}
+html::-webkit-scrollbar-thumb{border-radius: 3rem;
+    background-color: #003b00;}
+html ::-webkit-scrollbar-track{background-color:transparent;}
+body{
+    background-color:var(--maincolor) ;/*bodydeki kırmızı renk boyar*/}
+section{ /*yazıyı navbar ile aynı hizaya getirdi*/
+    padding: 3.5rem 7%;}
+
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1.25rem 2rem;
+    border-radius: 30rem;
+    font-size: 1.50rem;
+    color:white;
+    background-color: var(--black-color);
+    cursor: pointer;
+}
+.btn:hover{
+    opacity:0.9 ;
+    
+    
+}
+
+.heading{
+   color: #006600;
+   padding: 1rem;
+   text-transform: uppercase;
+   font-size:2.3rem ;
+   margin-bottom: 1rem;
+   border-bottom:0.1rem solid #006600 ;
+}
+
+.heading span{
+    text-transform: uppercase;
+    color: #000000;
+
+}
+/*header buradan başlıyor*/
+.header .logo img {
+    height: 5rem;
+    
+    }
+    .header{
+        background-color:#ffff ;
+        display: flex;
+        align-items: center;
+        justify-content:space-between ;
+        padding:0 7% ;
+        margin: 2rem 7%;
+        border-radius: 30rem;
+        box-shadow: 0px 0px 17px -2px rgba(0,0,0, 0.75);
+        position:sticky;/*kaydırma çubuğu saklama*/
+        top:0;
+        z-index: 1000;
+    }
+
+    .header .navbar a{
+    margin: 0 1rem ;
+    font-size: 1.6rem;
+    color:var(--black-color);
+    border-bottom: 0.1rem solid transparent;
+    }
+.header .navbar .active,
+.header .navbar a:hover{
+        border-color:#ff0033;/*menü üstüne gelince altındaki çizgi rengi*/
+        padding-bottom: 0.5rem; ;
+    }
+
+    .header .buton button{
+        cursor:pointer;
+        font-size: 2.5rem;
+        margin-left:2rem ;
+        background-color: transparent;
+    }
+/*header burada bitti*/
+
+/*home başladı*/
+.home{
+    min-height: 100vh;
+    background: url(./photos/arka.jpg) no-repeat;
+    background-size:cover;
+    background-position: center;
+    margin-top: -9.4rem;
+    display: flex;
+    align-items: center;
+}
+
+.home .content{
+    max-width: 60rem;   
+}
+.home .content h3{
+    font-size: 5rem;
+    color:#394949 ;
+    text-shadow: 1px 1px 1px #ffffff;
+    padding: 9px;
+    line-height:1 ;
+   
+    
+
+}
+.home .content p{
+    color:#000000;
+    font-size :1.50rem;
+    font-weight: 300;
+    line-height:1.3 ;
+    padding:1rem 0 ;
+     
+}
+/*home bitti*/
+/*menu başladı*/
+.menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    grid-template-rows: repeat(4, auto);
+    gap: 1.5rem;/*resimler arası boşluk*/
+}
+.menu .box-container .box{
+padding: 0,1rem;
+   min-height: 30rem;/*altlı üstlü resimler arasındaki boşluk*/
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: space-between;
+   background-color:var(--ana_renk);
+   border-radius: 1rem;
+}
+.menu .box-container .box menu-kategori{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    
+}
+.menu .box-container .box h3{
+    font-size:2rem ;
+    padding: 0.6rem;
+}
+.menu .box-container .box span{
+    padding: 0.6rem;
+}
+.menu .box-container .box p{
+    font-size:1.3rem ;
+    padding: 0.6rem;
+}
+.menu img{
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+.menu .box-container .box img{
+    width: 100%;
+    object-fit: cover;
+}
+/*menu bitti*/
+
+ /*blog başladı*/
+ .blogs .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  gap: 1.5rem;
+}
+
+.blogs .box-container .box {
+  background-color:var(--vurgu_renk);
+  border-radius: 3rem;
+  object-fit:fill;
+}
+
+.blogs .box-container .box .image {
+  height: 25rem;
+  overflow: hidden;
+  width: 100%;
+  border-top-left-radius: 3rem;
+  border-top-right-radius: 3rem;
+}
+
+.blogs .box-container .box .image img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.blogs .box-container .box:hover .image img {
+  transform: scale(1.2);
+}
+
+.blogs .box-container .box .content {
+  padding: 2rem;
+}
+
+.blogs .box-container .box .content .title {
+  line-height: 1;
+  font-size: 2.3rem;
+}
+
+.blogs .box-container .box .content span {
+  display: block;
+  padding-top: 1rem;
+  font-size: 1.25rem;
+}
+
+.blogs .box-container .box .content p {
+  font-size: 1.6rem;
+  line-height: 1.8;
+  color: #0d0d0d;
+  padding: 1rem 0;
+}
+ /*blog bitti*/
+
+ /*hakkımızda başladı*/
+.about .row {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+  }
+  
+  .about .row .image {
+    flex: 1 1 45rem;
+  }
+  
+  .about .row img {
+    width: 100%;
+   
+  }
+  
+  .about .row .content {
+    flex: 1 1 45rem;
+  }
+  
+  .about .row .content h3 {
+    font-size: 3rem;
+    color: #75A17C;
+  }
+  
+  .about .row .content p {
+    font-size: 1.6rem;
+    color: #000000;
+    padding: 2rem 0;
+    line-height: 1.6;
+  }
+ /*hakkımızda bitti*/
+
+ /*eleştiri başladı*/
+.review .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); 
+    gap: 1.5rem;
+    }
+
+  .review .box-container .box {
+    border: var(--border);
+    text-align: center;
+    padding: 3rem 2rem;
+    background-color: var(--ikinci_renk);
+    border-radius: 3rem; }
+ 
+  
+  .review .box-container .box p {
+    font-size: 1.5rem;
+    line-height: 1;
+    padding: 2rem 0; }
+ 
+  
+  .review .box-container .box .user {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .review .box-container .box h3 {
+    padding: 1rem 0;
+    font-size: 2rem;
+    color: var(--main-color);
+  }
+  
+  .review .box-container .box .stars i {
+    font-size: 1.5rem;
+    color: rgb(30, 131, 46);
+  }
+ /*eleştri bitti*/
+
+ /*iletişim başladı*/
+ .contact .row {
+    display: flex;
+    background-color:var(--vurgu_renk);
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .contact .row .map {
+    flex: 1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+  }
+  .contact .row form {
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center;
+  }
+  
+  .contact .row form h3 {
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    color: #878585;
+  }
+  
+  .contact .row form .inputBox {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+    border: var(--border);
+  }
+  
+  .contact .row form .inputBox i {
+    color: #515151;
+    font-size: 2rem;
+    padding-left: 2rem;
+  }
+  
+  .contact .row form .inputBox input {
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.7rem;
+    color: #000000;
+    text-transform: none;
+    background-color: transparent;
+  }
+  
+  .contact .row form .btn {
+    color: var(--main-color);
+    background-color: #fff;
+    font-weight: bold;
+  }
+ /*iletişim bitti*/
+
+ /*! footer start  */
+.footer {
+  background-color:var(--ikinci_renk);
+  text-align: center;
+  height: min-content;
+}
+
+
+.footer .share {
+  padding: 2rem 0;
+}
+.footer .share a {
+  width: 5rem;
+  height: 5rem;
+  line-height: 5rem;
+  color: #000000;
+  font-size: 2rem;
+  border: var(--border);
+  border-radius: 50%;
+  margin: 0.3rem;
+}
+
+.footer .share a:hover {
+  background-color:#ff0033; color: #000000;
+  
+}
+
+.footer .links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer .links a {
+  background-color: var(--main-color);
+  padding: 0.7rem 2rem;
+  color: #ffffff;
+  font-size: 2rem;
+  border: var(--border);
+}
+
+.footer .links a:hover {
+  background-color:#B9D3C7;
+  opacity: 0.7;
+  color:#000000;
+}
+
+.footer .links a.active {
+  background-color:#E2F2BB; color: #000000;
+}
+
+.footer .credit {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 300;
+  padding-top: 1.5rem;
+}
+
+.footer .credit span {
+  color:#000000;
+}
+/*! footer end  */
+/*index sayfası bitti*/
+
+/*iftar menüsü sayfası başladı*/
+/*iftar menüleri başladı*/
+.iftar .iftar{
+  background-image: url(photos/iftar.jpeg);
+  background-position: center;
+  background-size:cover;
+  min-width: 80rem;
+  min-height: 30rem;
+  border-radius: 1rem;
+}
+.iftar h3{
+  color: #ffffff;
+  font-size: 3.6rem;
+  text-align: center;
+  padding-top: 5rem;
+}
+.iftar p{
+  color: #D9D9D9;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 2rem 10rem;
+}
+/*header bitti*/
+/*kategori başladı*/
+.kategori {
+  background-image: url(photos/tarif.jpg);
+  background-position: center ;
+  background-size:cover;
+  min-width: 80rem;
+  min-height: 30rem;
+  border-radius: 1rem;
+}
+.kategori h3{
+  color: #ffffff;
+  font-size: 3.6rem;
+  text-align: center;
+  padding-top: 5rem;
+}
+.kategori p{
+  color: #D9D9D9;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 2rem 10rem;
+}
+
+/*Tarifler bitti*/
+/*tarifler sayfası bitti*/
+
+
+
+/*blog sayfası başladı*/
+/*en baştaki resim/yazı başladı*/
+.blog-baslik{
+  background-image: url(photos/sofra1.jpg) ;
+  background-position: center;
+  background-size: cover;
+  min-width: 80rem;
+  min-height: 30rem;
+  border-radius: 1rem;}
+.blog-baslik h3{
+  color:#ffff ;
+  font-size: 3.6rem;
+  text-align: center;
+  padding-top: 5rem;}
+.blog-baslik p{
+  color:#D9D9D9;
+  font-size:1.50rem ;
+  text-align: center;
+  padding:2rem 10rem;}
+/*en baştaki resim/yazı başladı*/
+/*blog içerik başlıyor*/
+.blog-icerik .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(40rem,1fr));
+  grid-template-rows: repeat(3, auto);
+  gap: 1.5rem;}
+.blog-icerik .box-container .box{
+  padding: 0,1rem;
+  min-height: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: #8FD194;
+  border-radius: 1rem;}
+.blog-icerik .box-container .box img{/*resmi div içinde yerleştirir*/
+  width: 100%;
+  object-fit:cover ;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;}
+.blog-icerik .box-container .box .content {padding: 1rem;}
+.blog-icerik .box-container .box .content h3 {
+  display: block;
+  line-height: 1.5;
+   font-size: 2rem;
+   font-weight: 400;}
+.blog .box-container .box .content p{
+  font-size: 1.3rem;
+  line-height: 1;
+  color: #393939;
+  padding-bottom: 3rem;}
+/*blog içerik bitti*/
+/*blog sayfası bitti*/
+
+/*kek blog*/
+
+
+
+
+
+
+
+/*keşfet başladı*/
+.kesfet {
+  background-image: url(photos/çarşı.jpg);
+  background-position: center;
+  background-size:cover;
+  min-width: 80rem;
+  min-height: 30rem;
+  border-radius: 1rem;
+}
+.kesfet h3{
+  color: #ffffff;
+  font-size: 3.6rem;
+  text-align: center;
+  padding-top: 5rem;
+}
+.kesfet p{
+  color: #D9D9D9;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 2rem 10rem;
+}
+/*keşfet bitti*/
