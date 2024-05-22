@@ -153,18 +153,27 @@ padding: 0,1rem;
    justify-content: space-between;
    background-color:var(--ana_renk);
    border-radius: 1rem;
+   color: #000000;
+   transition: color 0.3s ease;
 }
+
 .menu .box-container .box menu-kategori{
-    font-size: 2rem;
     text-transform: uppercase;
     
 }
 .menu .box-container .box h3{
     font-size:2.5rem ;
     padding: 0.6rem;
+    
 }
+.menu .box-container .box:hover h3{
+  color:#a5b978;
+}
+
+
 .menu .box-container .box span{
     padding: 0.6rem;
+    font-size:1.3rem;
 }
 .menu .box-container .box p{
     font-size:1.6rem ;
