@@ -394,7 +394,7 @@ padding: 0,1rem;
   flex-wrap: wrap;
   gap: 1rem;
 }
-
+ 
 .footer .links a {
   background-color: var(--main-color);
   padding: 0.7rem 2rem;
