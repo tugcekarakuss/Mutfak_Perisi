@@ -40,7 +40,7 @@ section{ /*yazıyı navbar ile aynı hizaya getirdi*/
     display: inline-block;
     padding: 1rem 3rem;
     border-radius: 30rem;
-    font-size: 2rem;
+    font-size: 1.7rem;
     color:white;
     background-color: var(--black-color);
     cursor: pointer;
@@ -55,7 +55,7 @@ section{ /*yazıyı navbar ile aynı hizaya getirdi*/
    color: #006600;
    padding: 1rem;
    text-transform: uppercase;
-   font-size:3.5rem ;
+   font-size:2.7rem ;
    margin-bottom: 1rem;
    border-bottom:0.1rem solid #006600 ;
 }
@@ -67,7 +67,7 @@ section{ /*yazıyı navbar ile aynı hizaya getirdi*/
 }
 /*header buradan başlıyor*/
 .header .logo img {
-    height: 7rem;
+    height: 5rem;
     
     }
     .header{
@@ -86,7 +86,7 @@ section{ /*yazıyı navbar ile aynı hizaya getirdi*/
 
     .header .navbar a{
     margin: 0 1rem ;
-    font-size: 2rem;
+    font-size: 1.7rem;
     color:var(--black-color);
     border-bottom: 0.1rem solid transparent;
     }
@@ -110,7 +110,7 @@ section{ /*yazıyı navbar ile aynı hizaya getirdi*/
     background: url(./photos/arka.jpg) no-repeat;
     background-size:cover;
     background-position: center;
-    margin-top: -11.5rem;
+    margin-top: -9.4rem;
     display: flex;
     align-items: center;
 }
@@ -119,18 +119,15 @@ section{ /*yazıyı navbar ile aynı hizaya getirdi*/
     max-width: 60rem;   
 }
 .home .content h3{
-    font-size: 5rem;
+    font-size: 4.6rem;
     color:#394949 ;
     text-shadow: 1px 1px 1px #ffffff;
     padding: 9px;
     line-height:1 ;
-   
-    
-
 }
 .home .content p{
     color:#000000;
-    font-size :1.9rem;
+    font-size :1.7rem;
     font-weight: 300;
     line-height:1;
     padding:1rem 0 ;
@@ -162,8 +159,8 @@ padding: 0,1rem;
     
 }
 .menu .box-container .box h3{
-    font-size:2.5rem ;
-    padding: 0.6rem;
+    font-size:2rem ;
+    padding: 0.5rem;
     
 }
 .menu .box-container .box:hover h3{
@@ -172,12 +169,12 @@ padding: 0,1rem;
 
 
 .menu .box-container .box span{
-    padding: 0.6rem;
+    padding: 0.5rem;
     font-size:1.3rem;
 }
 .menu .box-container .box p{
-    font-size:1.6rem ;
-    padding: 0.6rem;
+    font-size:1.5rem ;
+    padding: 0.5rem;
 }
 .menu img{
     border-top-right-radius: 1rem;
@@ -190,6 +187,20 @@ padding: 0,1rem;
 /*menu bitti*/
 
  /*blog başladı*/
+
+ .blogs .box-container .content .readmore{
+  color: #333;
+  
+  font-size: 2rem;
+    
+}
+.blogs .box-container .content .readmore:hover {
+  color:#daa07c;
+}
+
+
+
+
  .blogs .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
@@ -226,7 +237,7 @@ padding: 0,1rem;
 
 .blogs .box-container .box .content .title {
   line-height: 1;
-  font-size: 3rem;
+  font-size: 2.6rem;
 }
 
 .blogs .box-container .box .content span {
@@ -236,7 +247,7 @@ padding: 0,1rem;
 }
 
 .blogs .box-container .box .content p {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   line-height: 1.8;
   color: #0d0d0d;
   padding: 1rem 0;
@@ -264,12 +275,12 @@ padding: 0,1rem;
   }
   
   .about .row .content h3 {
-    font-size: 5rem;
+    font-size: 4rem;
     color: #75A17C;
   }
   
   .about .row .content p {
-    font-size: 2rem;
+    font-size: 1.7rem;
     color: #000000;
     padding: 2rem 0;
     line-height: 1.6;
@@ -286,13 +297,13 @@ padding: 0,1rem;
   .review .box-container .box {
     border: var(--border);
     text-align: center;
-    padding: 3rem 2rem;
+    padding: 1rem 1rem;
     background-color: var(--ikinci_renk);
     border-radius: 3rem; }
  
   
   .review .box-container .box p {
-    font-size: 2rem;
+    font-size: 1.8rem;
     line-height: 1.5;
     padding: 2rem 0; }
  
@@ -337,7 +348,7 @@ padding: 0,1rem;
   
   .contact .row form h3 {
     text-transform: uppercase;
-    font-size: 4rem;
+    font-size: 3rem;
     color: #878585;
   }
   
