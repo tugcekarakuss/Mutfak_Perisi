@@ -238,7 +238,10 @@ padding: 0,1rem;
 .blogs .box-container .box .content .title {
   line-height: 1;
   font-size: 2.6rem;
+  
+
 }
+
 
 .blogs .box-container .box .content span {
   display: block;
@@ -446,30 +449,8 @@ padding: 0,1rem;
 /*! footer end  */
 /*index sayfası bitti*/
 
-/*iftar menüsü sayfası başladı*/
-/*iftar menüleri başladı*/
-.iftar .iftar{
-  background-image: url(photos/iftar.jpeg);
-  background-position: center;
-  background-size:cover;
-  min-width: 80rem;
-  min-height: 30rem;
-  border-radius: 1rem;
-}
-.iftar h3{
-  color: #ffffff;
-  font-size: 3.6rem;
-  text-align: center;
-  padding-top: 5rem;
-}
-.iftar p{
-  color: #D9D9D9;
-  font-size: 1.5rem;
-  text-align: center;
-  padding: 2rem 10rem;
-}
-/*header bitti*/
-/*kategori başladı*/
+
+/*tarigler sayfası başladı*/
 .kategori {
   background-image: url(photos/tarif.jpg);
   background-position: center ;
@@ -491,7 +472,7 @@ padding: 0,1rem;
   padding: 2rem 10rem;
 }
 
-/*Tarifler bitti*/
+
 /*tarifler sayfası bitti*/
 
 
@@ -519,7 +500,7 @@ padding: 0,1rem;
 /*blog içerik başlıyor*/
 .blog-icerik .box-container{
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(40rem,1fr));
+  grid-template-columns: repeat(auto-fit,minmax(40rem,3fr));
   grid-template-rows: repeat(3, auto);
   gap: 1.5rem;}
 .blog-icerik .box-container .box{
