@@ -471,12 +471,10 @@ padding: 0,1rem;
   text-align: center;
   padding: 2rem 10rem;
 }
-
-
 /*tarifler sayfası bitti*/
 
 
-
+/*--------------------------------*/
 /*blog sayfası başladı*/
 /*en baştaki resim/yazı başladı*/
 .blog-baslik{
@@ -529,9 +527,34 @@ padding: 0,1rem;
   color: #393939;
   padding-bottom: 3rem;}
 /*blog içerik bitti*/
+
+/*blog yazısı içerik başladı*/
+#blog-detail {
+  width: 80%;
+  margin: 20px;
+}
+
+#blog-detail img {
+  max-width: 100%;
+  height: auto;
+}
+
+#back-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#back-button:hover {
+  background-color: #555;
+}
+/*blog yazısı içerik bitti*/
 /*blog sayfası bitti*/
 
-/*kek blog*/
 
 
 
@@ -539,25 +562,3 @@ padding: 0,1rem;
 
 
 
-/*keşfet başladı*/
-.kesfet {
-  background-image: url(photos/çarşı.jpg);
-  background-position: center;
-  background-size:cover;
-  min-width: 80rem;
-  min-height: 30rem;
-  border-radius: 1rem;
-}
-.kesfet h3{
-  color: #ffffff;
-  font-size: 3.6rem;
-  text-align: center;
-  padding-top: 5rem;
-}
-.kesfet p{
-  color: #D9D9D9;
-  font-size: 1.5rem;
-  text-align: center;
-  padding: 2rem 10rem;
-}
-/*keşfet bitti*/

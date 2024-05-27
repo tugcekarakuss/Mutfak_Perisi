@@ -37,7 +37,7 @@
 <!--Blog içerik başladı-->
 <section class="blogs" id="blogs">
   <div class="box-container">
-    <div class="box">
+    <div class="box" data-content="content1">
       <div class="image">
         <img src="photos/kek.jpg" alt="blog" />
       </div>
@@ -46,7 +46,7 @@
         <span>by admin / 13 nis, 2024</span>
       </div>
     </div>
-    <div class="box">
+    <div class="box" data-content="content2">
       <div class="image">
         <img src="photos/ceviz.jpg" alt="blog" />
       </div>
@@ -56,7 +56,7 @@
         
       </div>
     </div>
-    <div class="box">
+    <div class="box" data-content="content3">
       <div class="image">
         <img src="photos/kahve.jpg" alt="blog" />
       </div>
@@ -69,7 +69,7 @@
   </div><br>
 
   <div class="box-container">
-    <div class="box">
+    <div class="box" data-content="content4">
       <div class="image">
         <img src="https://cdn.yemek.com/mncrop/620/388/uploads/2016/03/kek-malzemeleri-subat-2021.jpg" alt="blog" />
       </div>
@@ -79,7 +79,7 @@
         
       </div>
     </div>
-    <div class="box">
+    <div class="box" data-content="content5">
       <div class="image">
         <img src="https://cdn.yemek.com/mncrop/620/388/uploads/2024/04/orman-meyveleri-shutter-1.jpg" alt="blog" />
       </div>
@@ -89,7 +89,7 @@
         
       </div>
     </div>
-    <div class="box">
+    <div class="box" data-content="content6">
       <div class="image">
         <img src="https://cdn.yemek.com/mnresize/1250/833/uploads/2024/03/karbonhidratlar-shutter.jpg" alt="blog" />
       </div>
@@ -102,16 +102,16 @@
   </div>
 
   <div class="box-container">
-    <div class="box">
+    <div class="box" data-content="content7">
       <div class="image">
-        <img src="https://cdn.yemek.com/mncrop/620/388/uploads/2024/02/havuc-suyu-shutter3.jpg" alt="blog" />
+        <img src="https://cdn.yemek.com/mnresize/1250/833/uploads/2024/02/havuc-suyu-shutter3.jpg" alt="blog" />
       </div>
       <div class="content">
         <a href="#" class="title">Her Akşam Bir Bardak İçmeli: Havuç Suyunun Faydaları</a>
         <span>by admin / 17 haz, 2024</span>
       </div>
     </div>
-    <div class="box">
+    <div class="box" data-content="content8">
       <div class="image">
         <img src="https://cdn.yemek.com/mnresize/1250/833/uploads/2017/07/domates-sebze-aralik-2020.jpg" alt="blog" />
       </div>
@@ -121,7 +121,7 @@
         
       </div>
     </div>
-    <div class="box">
+    <div class="box" data-content="content9">
       <div class="image">
         <img src="https://cdn.yemek.com/mnresize/1250/833/uploads/2016/10/cennet-hurmasi-aralik-2020-nerede-bulunur.jpg" alt="blog" />
       </div>
@@ -132,11 +132,17 @@
       </div>
     </div>
   </div>
-    
 </section>
 
-
-
+<section id="blog-detail" style="display:none;">
+  <div class="content">
+      <h2 id="blog-detail-title">Blog Başlığı</h2>
+      <img id="blog-detail-image" src="" alt="blog">
+      <p id="blog-detail-text">Blog içeriği burada görünecek...</p>
+      <button id="back-button">Geri</button>
+  </div>
+</section>
+<script src="Js.js"></script>
 
 <!--footer başladı -->
 <section class="footer">
