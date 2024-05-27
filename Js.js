@@ -1,3 +1,27 @@
+/*tarid kategori başladı*/
+function showCategory(categoryId) {
+    // Tüm kategorileri gizle
+    var categories = document.querySelectorAll('.category');
+    categories.forEach(function(category) {
+        category.classList.remove('active');
+    });
+
+    // Seçilen kategoriyi göster
+    var selectedCategory = document.getElementById(categoryId);
+    selectedCategory.classList.add('active');
+}
+
+// İlk açılışta tüm kategorileri göster
+document.addEventListener('DOMContentLoaded', function() {
+    var categories = document.querySelectorAll('.category');
+    categories.forEach(function(category) {
+        category.classList.add('active');
+    });
+});
+
+/*tarif kategori bitti*/
+
+/*blog yazı içeriği başladı*/ 
 document.addEventListener("DOMContentLoaded", function() {
     const blogBoxes = document.querySelectorAll(".box");
     const blogDetailSection = document.getElementById("blog-detail");
@@ -76,3 +100,4 @@ document.addEventListener("DOMContentLoaded", function() {
         blogsSection.style.display = "block";
     });
 });
+/*blog yazı içeriği bitti*/

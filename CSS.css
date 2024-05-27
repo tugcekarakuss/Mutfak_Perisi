@@ -471,6 +471,66 @@ padding: 0,1rem;
   text-align: center;
   padding: 2rem 10rem;
 }
+
+
+/*kategori menu başladı*/
+.container {
+  display: flex;
+}
+
+.sidebar {
+  width: 20%;
+  background-color: #f4f4f4;
+  padding: 10px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  margin-bottom: 5px;
+  border: 1px solid #ddd;
+}
+
+.sidebar ul li:hover {
+  background-color: #ddd;
+}
+
+.main-content {
+  width: 80%;
+  padding: 20px;
+}
+
+.category {
+  display: none;
+}
+
+.category.active {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  margin: 10px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  width: calc(33.333% - 40px);
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.item img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*kategori menu bitti*/
 /*tarifler sayfası bitti*/
 
 
