@@ -255,6 +255,12 @@ padding: 0,1rem;
   color: #0d0d0d;
   padding: 1rem 0;
 }
+
+
+.dahası {
+  display: flex;
+  justify-content: flex-start;
+}
  /*blog bitti*/
 
  /*hakkımızda başladı*/
