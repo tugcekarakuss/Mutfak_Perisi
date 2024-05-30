@@ -597,27 +597,32 @@ padding: 0,1rem;
 /*blog yazısı içerik başladı*/
 #blog-detail {
   width: 80%;
-  margin: 20px;
+ 
+}
+#blog-detail-title{
+  font-size: 3rem;
+  color: #73cf7b;
+  margin-bottom: 3rem;
+}
+.image-text-container {
+  display: flex;
+  align-items:start; /* Dikey hizalama için */
 }
 
 #blog-detail img {
-  max-width: 100%;
-  height: auto;
+  max-width: 60rem; /* Resim genişliğini ayarlayın */
+  margin-right: 20px; /* Yazı ile resim arasına boşluk koyar */
+  border-radius:3rem;
 }
 
-#back-button {
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #333;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+#blog-detail-text {
+  flex: 1; /* Yazının kalan alanı kaplamasını sağlar */
+  font-size: 1.3rem;
+  align-items:start;
 }
 
-#back-button:hover {
-  background-color: #555;
-}
+
+
 /*blog yazısı içerik bitti*/
 /*blog sayfası bitti*/
 
