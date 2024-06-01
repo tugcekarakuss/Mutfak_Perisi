@@ -1,23 +1,38 @@
 /*tarid kategori başladı*/
-function showCategory(categoryId) {
-    // Tüm kategorileri gizle
-    var categories = document.querySelectorAll('.category');
-    categories.forEach(function(category) {
-        category.classList.remove('active');
-    });
+document.addEventListener("DOMContentLoaded", function() {
+    const category = localStorage.getItem('category') || 'all';
+    highlightCategory(category);
+    filterCategory(category);
+    localStorage.removeItem('category'); // İsteğe bağlı olarak öğeyi kullandıktan sonra temizleyin
+});
 
-    // Seçilen kategoriyi göster
-    var selectedCategory = document.getElementById(categoryId);
-    selectedCategory.classList.add('active');
+function filterCategory(category) {
+    var items = document.getElementsByClassName('item');
+    for (var i = 0; i < items.length; i++) {
+        if (category === 'all') {
+            items[i].style.display = 'block';
+        } else {
+            if (items[i].classList.contains(category)) {
+                items[i].style.display = 'block';
+            } else {
+                items[i].style.display = 'none';
+            }
+        }
+    }
+    highlightCategory(category);
 }
 
-// İlk açılışta tüm kategorileri göster
-document.addEventListener('DOMContentLoaded', function() {
-    var categories = document.querySelectorAll('.category');
-    categories.forEach(function(category) {
-        category.classList.add('active');
+function highlightCategory(category) {
+    var categories = document.querySelectorAll('#categories li');
+    categories.forEach(function(li) {
+        li.classList.remove('active');
     });
-});
+
+    var selectedCategory = document.querySelector('#categories li[onclick*="' + category + '"]');
+    if (selectedCategory) {
+        selectedCategory.classList.add('active');
+    }
+}
 
 /*tarif kategori bitti*/
 
@@ -71,15 +86,24 @@ document.addEventListener("DOMContentLoaded", function() {
         },
         content8: {
             title: "Bilmeyen Kalmasın: Domates Meyve mi Sebze mi?",
-            content: "Blog içeriği 2 burada...",
+            content: `Domates, botanik açıdan bir meyvedir. Çünkü çekirdekleri içinde bulunur ve bitkinin üreme organında yer alır. Türk Dil Kurumu da meyveyi "tohum taşıyan ve yenebilen organ" olarak tanımlar.
+
+            Günlük yaşamda ise domates, tatlı değil nötr bir lezzete sahip olduğu ve salatalarda, yemeklerde kullanıldığı için sebze olarak görülür. Ancak bilimsel olarak domates bir meyvedir.`, 
             image: "https://cdn.yemek.com/mnresize/1250/833/uploads/2017/07/domates-sebze-aralik-2020.jpg"
         },
         content9: {
             title: "Trabzon Hurması Neye İyi Gelir? Diyenlere: Cennet Hurması Faydaları",
-            content: "Blog içeriği 3 burada...",
+            content: `Trabzon hurması, Türkiye'nin kuzeydoğusunda yetişen ve oldukça besleyici bir meyvedir. Cennet hurması olarak da bilinir. İşte Trabzon hurmasının sağlık açısından faydalarından bazıları:
+            <ul>
+            <li>Trabzon hurması, yüksek miktarda lif içerir ve sindirim sağlığını destekler.</li>
+            <li>C vitamini bakımından zengindir, bağışıklık sistemini güçlendirir.</li>
+            <li>Antioksidanlar açısından zengin olup, hücre hasarını azaltmaya yardımcı olur.</li>
+            <li>Potasyum içeriği sayesinde kalp sağlığını destekler.</li>
+            <li>Trabzon hurması, sağlıklı bir cilt için önemli olan vitamin ve mineralleri içerir.</li>
+            </ul>
+            Bu nedenlerle, Trabzon hurması düzenli olarak tüketildiğinde sağlık üzerinde olumlu etkilere sahip olabilir.`,
             image: "https://cdn.yemek.com/mnresize/1250/833/uploads/2016/10/cennet-hurmasi-aralik-2020-nerede-bulunur.jpg"
         }
-        
     };
 
     blogBoxes.forEach(box => {
@@ -87,7 +111,7 @@ document.addEventListener("DOMContentLoaded", function() {
             const contentKey = this.getAttribute("data-content");
             const post = blogPosts[contentKey];
             blogDetailTitle.textContent = post.title;
-            blogDetailText.textContent = post.content;
+            blogDetailText.innerHTML = post.content; // İçeriği HTML olarak ayarla
             blogDetailImage.src = post.image;
             blogDetailImage.alt = post.title;
             blogsSection.style.display = "none";
@@ -100,4 +124,28 @@ document.addEventListener("DOMContentLoaded", function() {
         blogsSection.style.display = "block";
     });
 });
+
+function goToBlog(blogId) {
+    const blogDetail = blogPosts[blogId];
+    if (blogDetail) {
+        blogDetailTitle.textContent = blogDetail.title;
+        blogDetailText.innerHTML = blogDetail.content; // İçeriği HTML olarak ayarla
+        blogDetailImage.src = blogDetail.image;
+        blogDetailSection.style.display = "block";
+        blogsSection.style.display = "none";
+    }
+}
+
+
+function goToBlog(blogId) {
+    const blogDetail = blogPosts[blogId];
+    if (blogDetail) {
+        blogDetailTitle.textContent = blogDetail.title;
+        blogDetailText.textContent = blogDetail.content;
+        blogDetailImage.src = blogDetail.image;
+        blogDetailSection.style.display = "block";
+        blogsSection.style.display = "none";
+    }
+}
 /*blog yazı içeriği bitti*/
+

@@ -395,6 +395,7 @@ padding: 0,1rem;
   background-color:var(--ikinci_renk);
   text-align: center;
   height: min-content;
+  
 }
 
 
@@ -482,13 +483,15 @@ padding: 0,1rem;
 /*kategori menu başladı*/
 .container {
   display: flex;
+  height: 100vh;
 }
 
 .sidebar {
   width: 20%;
   background-color: #f4f4f4;
-  padding: 10px;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  margin-left: 10rem;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
 }
 
 .sidebar ul {
@@ -499,35 +502,29 @@ padding: 0,1rem;
 .sidebar ul li {
   padding: 10px;
   cursor: pointer;
-  background-color: #fff;
+  background-color: #ddd;
   margin-bottom: 5px;
-  border: 1px solid #ddd;
+  text-align: center;
 }
 
 .sidebar ul li:hover {
-  background-color: #ddd;
+  background-color: #ccc;
 }
 
-.main-content {
+.content {
   width: 80%;
   padding: 20px;
-}
-
-.category {
-  display: none;
-}
-
-.category.active {
   display: flex;
   flex-wrap: wrap;
 }
 
 .item {
-  margin: 10px;
-  border: 1px solid #ddd;
-  padding: 10px;
-  width: calc(33.333% - 40px);
-  box-sizing: border-box;
+  width: 30%;
+  height: 30rem;
+  margin: 5px;
+  border: 1px solid #ccc;
+  padding: 1px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
   text-align: center;
 }
 
@@ -535,6 +532,7 @@ padding: 0,1rem;
   max-width: 100%;
   height: auto;
 }
+
 
 /*kategori menu bitti*/
 /*tarifler sayfası bitti*/
@@ -597,28 +595,34 @@ padding: 0,1rem;
 /*blog yazısı içerik başladı*/
 #blog-detail {
   width: 80%;
- 
 }
-#blog-detail-title{
+
+#blog-detail-title {
   font-size: 3rem;
   color: #73cf7b;
   margin-bottom: 3rem;
 }
+
 .image-text-container {
   display: flex;
-  align-items:start; /* Dikey hizalama için */
+  align-items: flex-start; /* Dikey hizalama */
 }
 
 #blog-detail img {
   max-width: 60rem; /* Resim genişliğini ayarlayın */
   margin-right: 20px; /* Yazı ile resim arasına boşluk koyar */
-  border-radius:3rem;
+  border-radius: 3rem;
+}
+
+.yazi {
+  flex: 1; /* Yazının kalan alanı kaplamasını sağlar */
+  font-size: 1.3rem;
+  max-width: 60%; /* Yazının maksimum genişliğini ayarlayın */
 }
 
 #blog-detail-text {
-  flex: 1; /* Yazının kalan alanı kaplamasını sağlar */
+  width: 100%; /* Yazının tam genişlik kaplamasını sağlar */
   font-size: 1.3rem;
-  align-items:start;
 }
 
 
