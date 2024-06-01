@@ -125,27 +125,9 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-function goToBlog(blogId) {
-    const blogDetail = blogPosts[blogId];
-    if (blogDetail) {
-        blogDetailTitle.textContent = blogDetail.title;
-        blogDetailText.innerHTML = blogDetail.content; // İçeriği HTML olarak ayarla
-        blogDetailImage.src = blogDetail.image;
-        blogDetailSection.style.display = "block";
-        blogsSection.style.display = "none";
-    }
-}
 
 
-function goToBlog(blogId) {
-    const blogDetail = blogPosts[blogId];
-    if (blogDetail) {
-        blogDetailTitle.textContent = blogDetail.title;
-        blogDetailText.textContent = blogDetail.content;
-        blogDetailImage.src = blogDetail.image;
-        blogDetailSection.style.display = "block";
-        blogsSection.style.display = "none";
-    }
-}
+
+
 /*blog yazı içeriği bitti*/
 
