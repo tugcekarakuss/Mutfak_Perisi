@@ -593,37 +593,70 @@ padding: 0,1rem;
 /*blog içerik bitti*/
 
 /*blog yazısı içerik başladı*/
+/* Blog detay bölümünü tam ekran yapar */
 #blog-detail {
-  width: 80%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 1000;
+  overflow-y: auto;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
+/* Blog başlığını stilize eder */
 #blog-detail-title {
-  font-size: 3rem;
+  font-size: 4rem;
   color: #73cf7b;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
+/* Resim ve yazı konteynerini ayarlar */
 .image-text-container {
   display: flex;
-  align-items: flex-start; /* Dikey hizalama */
+  align-items: flex-start;
+  gap: 3rem;
+  flex-wrap: nowrap;
 }
 
+/* Resim stilini ayarlar */
 #blog-detail img {
-  max-width: 60rem; /* Resim genişliğini ayarlayın */
-  margin-right: 20px; /* Yazı ile resim arasına boşluk koyar */
-  border-radius: 3rem;
+  flex: 0 0 50%;
+  max-width: 50%;
+  border-radius: 1rem;
 }
 
-.yazi {
-  flex: 1; /* Yazının kalan alanı kaplamasını sağlar */
-  font-size: 1.3rem;
-  max-width: 60%; /* Yazının maksimum genişliğini ayarlayın */
-}
-
+/* Yazı stilini ayarlar */
 #blog-detail-text {
-  width: 100%; /* Yazının tam genişlik kaplamasını sağlar */
+  flex: 1;
   font-size: 1.3rem;
+  line-height: 2.1rem;
+  margin-top: 0;
 }
+
+/* Küçük ekranlar için medya sorgusu */
+@media (max-width: 768px) {
+  .image-text-container {
+    flex-direction: column;
+  }
+
+  #blog-detail img {
+    flex: none;
+    margin-bottom: 20px;
+  }
+
+  #blog-detail-text {
+    flex: none;
+  }
+}
+
+
+
+
+
 
 
 
