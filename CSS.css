@@ -759,6 +759,26 @@ padding: 0,1rem;
   background-color: #fff;
 }
 
+.filter {
+  text-align: center;
+  margin: 2em 0;
+}
+
+.filter-btn {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.filter-btn:hover {
+  background-color: #555;
+}
+
 .videos {
   display: flex;
   justify-content: space-around;
@@ -793,7 +813,6 @@ padding: 0,1rem;
 .video:hover {
   transform: scale(1.05);
 }
-
 
 
 

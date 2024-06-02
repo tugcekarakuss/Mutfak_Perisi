@@ -30,51 +30,71 @@
   <h2>En Son Videolar</h2>
   <p>Lezzetli yemek tariflerini ve birbirinden ilginç mutfak tüyoları ile youtube kanalımıza davetlisiniz!</p>
 </section>
-<section class="videos">
-  <div class="video">
-      <iframe  src="https://www.youtube.com/embed/l0rqa5TIBHU?si=FL2IsfD3bdeBkmc6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      <h3>Gurme Yemek Tarifleri</h3>
-      <p>Sizinle beraber gezip,tadıyoruz.Bu heyecanlı ve leziz yolculuğa hazır mısınız!</p>
-  </div>
-  <div class="video">
-    <iframe  src="https://www.youtube.com/embed/k3Vl8OsBcVM?si=f2McmEbA2mgzz0qb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      <h3>Sosyal Medyada Viral Olan Tarifler</h3>
-      <p>Viral olan o tarifleri deniyoruz...</p>
-  </div>
-  <div class="video">
-    <iframe  src="https://www.youtube.com/embed/6FNRDwX7LQo?si=0o9nlHJgnUmFXTch" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      <h3>İlginç Mutfak Ürünleri</h3>
-      <p>Bakalım bu sefer hangi ürünleri deniyoruz.Bir keşif maceramıza daha davetlisiniz.</p>
-  </div>
-  <div class="video">
-    <iframe  src="https://www.youtube.com/embed/l0rqa5TIBHU?si=FL2IsfD3bdeBkmc6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <h3>Gurme Yemek Tarifleri</h3>
-    <p>Sizinle beraber gezip,tadıyoruz.Bu heyecanlı ve leziz yolculuğa hazır mısınız!</p>
-</div>
-<div class="video">
-  <iframe  src="https://www.youtube.com/embed/k3Vl8OsBcVM?si=f2McmEbA2mgzz0qb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <h3>Sosyal Medyada Viral Olan Tarifler</h3>
-    <p>Viral olan o tarifleri deniyoruz...</p>
-</div>
-<div class="video">
-  <iframe  src="https://www.youtube.com/embed/6FNRDwX7LQo?si=0o9nlHJgnUmFXTch" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <h3>İlginç Mutfak Ürünleri</h3>
-    <p>Bakalım bu sefer hangi ürünleri deniyoruz.Bir keşif maceramıza daha davetlisiniz.</p>
-</div>
-<div class="video">
-  <iframe  src="https://www.youtube.com/embed/6FNRDwX7LQo?si=0o9nlHJgnUmFXTch" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <h3>İlginç Mutfak Ürünleri</h3>
-    <p>Bakalım bu sefer hangi ürünleri deniyoruz.Bir keşif maceramıza daha davetlisiniz.</p>
-</div>
-<div class="video">
-  <iframe  src="https://www.youtube.com/embed/6FNRDwX7LQo?si=0o9nlHJgnUmFXTch" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <h3>İlginç Mutfak Ürünleri</h3>
-    <p>Bakalım bu sefer hangi ürünleri deniyoruz.Bir keşif maceramıza daha davetlisiniz.</p>
-</div>
-
-
-
+<section class="filter">
+  <button class="filter-btn" onclick="filterVideos('all')">Tümü</button>
+  <button class="filter-btn" onclick="filterVideos('sef')">Şefle Ye</button>
+  <button class="filter-btn" onclick="filterVideos('tarif')">Leziz Tarifler</button>
+  <button class="filter-btn" onclick="filterVideos('gezme')">Gezelim-Tadalım</button>
 </section>
+<section class="videos" id="videos">
+  <div class="video sef">
+    <iframe  src="https://www.youtube.com/embed/N48Osey1giE?si=HkqA63-B9qLDLZ_O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <h3>Şefle Ye 1</h3>
+      <p>Yolunuz bu aralar Kurtuluş ve çevresine düşerse ne yenilir ne içilir diye düşünmeyin diye size en güzelinden harika bir yemek rotası hazırladık 😍 Dopdolu bu içeriğimiz toku acıktırır, izlerken aman dikkat !</p>
+  </div>
+  <div class="video tarif">
+    <iframe  src="https://www.youtube.com/embed/fv1yZJ_iFfk?si=tUge4PnnQ43LSgvB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <h3>Birbirinden Lezzetli Salata Tarifi</h3>
+      <p>Salata deyince aklınıza ne geliyor? Salataları sıkıcı mı buluyorsunuz? Yeşillik olmadan salata yapılamaz mı? Ferhat Şef salataya dair kafanızdaki soru işaretlerini kaldırmakla kalmıyor sizlere evinizdeki tüm malzemeler ve biraz hayal gücüyle nasıl salatalar yapacağınızı da anlatıyor. </p>
+  </div>
+  <div class="video gezme">
+    <iframe  src="https://www.youtube.com/embed/l0rqa5TIBHU?si=-wNyf0OApXKVxOvE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <h3>Şefimizle Beraber Gezip Tadıyoruz 1</h3>
+      <p>Ünlü şefimizle birlikte lezzetli yemekleri beraber tadıyoruz.</p>
+  </div>
+  <div class="video gezme">
+    <iframe  src="https://www.youtube.com/embed/tDc3rVc2rlQ?si=y51iXAKmeG2ZZxrN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <h3>Şefimizle Beraber Gezip Tadıyoruz 2</h3>
+      <p>Kıbrıs'ta tadılabileceek o yiyecek ve içecekler bu videomuzda sizlerle.</p>
+  </div>
+  <div class="video sef">
+    <iframe  src="https://www.youtube.com/embed/Jha7wm_gXgg?si=d4C4-s1ZkSwkGkMF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <h3>Şefle Ye 2</h3>
+      <p>Yolunuz bu aralar Bağdat Caddesi'ne düşerse ne yenilir ne içilir diye düşünmeyin diye size en güncelinden harika bir yemek rotası hazırladık! Dopdolu bu içeriğimiz toku acıktırır, izlerken aman dikkat!</p>
+  </div>
+  <div class="video tarif">
+    <iframe src="https://www.youtube.com/embed/EY3UHse28FY?si=9RRsfvEh9RgTiOUs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <h3>İddia Ediyoruz En İyi Sandviçi Yapıyoruz  </h3>
+      <p>Sabah, öğlen, gündüz fark etmeksizin öyle ya da böyle sandviç yapılabilir. Peki sandviçi iyi yapan detaylar nelerdir? Şef Ferhat Bora bu videoda evde hazırlayacağınız sandviçleri bir üst seviyeye taşıyacak 5 önemli taktiği gösteriyor.</p>
+  </div>
+  <div class="video sef">
+    <iframe  src="https://www.youtube.com/embed/of1sDuEyiow?si=GoIWn1zee3aE7cax" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <h3>Şefle Ye 3</h3>
+    <p>Şefimiz Ferhat Bora’nın İstanbul’u semt semt gezdiği Şefle Ye’nin yeni bölümünde Bağcılar, Güngören ve Zeytinburnu’nda mutlaka ziyaret edilmesi gereken mekanları bir bir dolaşmaya hazır mısınız?</p>
+</div>
+<div class="video gezme">
+  <iframe  src="https://www.youtube.com/embed/9PHjJl4tyvQ?si=EwvDNo-0McnPnO-E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <h3>Şefimizle Beraber Gezip Tadıyoruz 3</h3>
+  <p>Haritalar açılıyor, konum giriliyor. İstikamet: Samsun! Ferhat Şef ve Mete bu kez ünü tüm ülkeye yayılmış nefis Samsun lezzetlerinin izini sürmek için yollarda. Şehrin önemli lezzet simgelerinden olan Çakallı menemeninden tutun, başka bir yerde kolay kolay bulamayacağınız kaz tiridine, Terme ve Bafra pidesinden, dondurmalara uzanan harika bir keşfe davetlisiniz.</p>
+</div>
+</section>
+
+<script>
+  function filterVideos(category) {
+      var videos = document.querySelectorAll('.video');
+      if (category === 'all') {
+          videos.forEach(video => video.style.display = 'block');
+      } else {
+          videos.forEach(video => {
+              if (video.classList.contains(category)) {
+                  video.style.display = 'block';
+              } else {
+                  video.style.display = 'none';
+              }
+          });
+      }
+  }
+</script>
 <!--içerik başladı-->
 
 <!--içerik bitti-->
