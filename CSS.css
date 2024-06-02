@@ -753,7 +753,46 @@ padding: 0,1rem;
 }
 
 
+.intro {
+  text-align: center;
+  padding: 2em 1em;
+  background-color: #fff;
+}
 
+.videos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 2em 1em;
+}
+
+.video {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 1em;
+  padding: 1em;
+  border-radius: 10px;
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.video iframe {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.video h3 {
+  margin: 1em 0 0.5em;
+}
+
+.video p {
+  margin: 0.5em 0;
+}
+
+.video:hover {
+  transform: scale(1.05);
+}
 
 
 
