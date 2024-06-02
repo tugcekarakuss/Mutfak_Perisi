@@ -1,6 +1,4 @@
-/*index sayfasından blog kısmına yönlendirme başladı*/
 
-/*index blog yönlendirme bitti*/
 
 /*tarid kategori başladı*/
 document.addEventListener("DOMContentLoaded", function() {
@@ -37,6 +35,52 @@ function highlightCategory(category) {
         selectedCategory.classList.add('active');
     }
 }
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var items = document.querySelectorAll('.item');
+    items.forEach(function(item) {
+        item.addEventListener('click', function() {
+            var title = this.getAttribute('data-title');
+            var details = this.getAttribute('data-details');
+            showModal(title, details);
+        });
+    });
+});
+/* tarif ayrıntı başladı*/
+document.addEventListener('DOMContentLoaded', function() {
+    var items = document.querySelectorAll('.item');
+    items.forEach(function(item) {
+        item.addEventListener('click', function() {
+            var title = this.getAttribute('data-title');
+            var details = this.getAttribute('data-details');
+            showModal(title, details);
+        });
+    });
+});
+
+function showModal(title, details) {
+    var modal = document.getElementById('recipeModal');
+    document.getElementById('modalTitle').textContent = title;
+    document.getElementById('modalDetails').innerHTML = details;
+    modal.style.display = "block";
+}
+
+function closeModal() {
+    var modal = document.getElementById('recipeModal');
+    modal.style.display = "none";
+}
+
+// Modalın dışına tıklayınca kapatma
+window.onclick = function(event) {
+    var modal = document.getElementById('recipeModal');
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+/*tarif ayrıntı bitti*/
 
 /*tarif kategori bitti*/
 
