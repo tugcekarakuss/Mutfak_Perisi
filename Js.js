@@ -1,64 +1,5 @@
 /*index sayfasından blog kısmına yönlendirme başladı*/
-document.addEventListener('DOMContentLoaded', function() {
-    const urlParams = new URLSearchParams(window.location.search);
-    const contentData = urlParams.get('content');
 
-    if (contentData) {
-      const content = JSON.parse(decodeURIComponent(contentData));
-      
-      document.getElementById('content-title').innerText = content.title;
-      document.getElementById('content-text').innerHTML = content.content;
-      document.getElementById('content-image').src = content.image;
-    }
-  });
-  document.addEventListener('DOMContentLoaded', function() {
-    const urlParams = new URLSearchParams(window.location.search);
-    const contentId = urlParams.get('content');
-
-    if (contentId) {
-      const selectedContent = document.querySelector(`.box[data-content="${contentId}"]`);
-      if (selectedContent) {
-        selectedContent.classList.add('active');
-      }
-    }
-  });
-  document.addEventListener('DOMContentLoaded', function() {
-    const readMoreLinks = document.querySelectorAll('.readmore');
-
-    const contents = {
-      content1: {
-        title: "Kek Yapmanın Sırları",
-        content: `<h2>Kek Her Denemede En İyi Nasıl Yapılır?</h2><br>
-        <p>Kek pişirmek mutfak sanatının ve bilimin bir karışımıdır. İçi pamuk gibi yumuşacık, dışı kıtır kabuklu bir kek yapabilmek için ufak ayrıntıları gözden kaçırmamak birinci koşuldur. Bu ayrıntılara çırpma süresi ve şekli, kullanılan malzemelerin ısıları ve cinsleri de dahildir. Bununla birlikte pastacılıkta geliştirilmiş birçok farklı çeşidi olduğundan kekin nasıl bir kıvama sahip olacağı da değişkenlik gösterir. Kek pişirmenin öncelikli kurallarından bir diğeri de hamuru doğru kıvama gelene dek çırpmaktır. İçindeki hava kabarcıkları ne kadar yoğun ve doğru oranda olursa mamul de o denli güzel ve ipeksi bir dokuya sahip olur.</p><br>
-        <p>Peki, gerçekten <b>kusursuz bir kek yapmanın püf noktaları</b> nelerdir?</p><br>
-        <h2>Kek Yapmanın Püf Noktaları</h2><br>
-        <ul>
-        <li>Kek malzemeleri oda sıcaklığında olmalıdır.</li>
-        <li>Tarif ölçülerine uyulmalıdır.</li>
-        <li>Malzemeler doğru sıra ile eklenmelidir.</li>
-        <li>Kuru malzemeler elenmelidir.</li>
-        <li>Sıvılar yüksek hızda çırpılmalı; katılar yavaşça karıştırılmalıdır.</li>
-        <li>Kek kalıbı yağlanıp unlanmalıdır.</li>
-        <li>Kek yapmadan önce fırın ısıtılmalıdır.</li>
-        <li>Kek pişerken fırın kapağı açılmamalıdır.</li>
-        <li>Kek fırından alınınca kalıpta soğutulmalıdır.</li>
-        </ul>`,
-        image: "photos/kek.jpg"
-      },
-      // Diğer içerikler buraya eklenir.
-    };
-
-    readMoreLinks.forEach(link => {
-      link.addEventListener('click', function(event) {
-        event.preventDefault();
-        const contentId = this.getAttribute('data-content');
-        const contentData = contents[contentId];
-
-        // İçeriği JSON olarak URL'e ekle
-        window.location.href = `blog.html?content=${encodeURIComponent(JSON.stringify(contentData))}`;
-      });
-    });
-  });
 /*index blog yönlendirme bitti*/
 
 /*tarid kategori başladı*/
@@ -152,11 +93,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <li>Depresyon etkilerini hafifletir.</li>
 <li>Uyku kalitesini yükseltir.</li>
 <li>Üreme sağlığını destekler.</li>
-            
-            
-            </ul>
-            
-            `,
+            </ul>`,
             image: "photos/ceviz.jpg"
         },
         content3: {

@@ -144,7 +144,98 @@
       <button class="btn" id="back-button">Geri</button>
   </div>
 </section>
+  
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+      const blogPosts = {
+          content1: {
+              title: "Kek Yapmanın Sırları",
+              content: `<h2>Kek Her Denemede En İyi Nasıl Yapılır?</h2><br>
+              <p>Kek pişirmek mutfak sanatının ve bilimin bir karışımıdır. İçi pamuk gibi yumuşacık, dışı kıtır kabuklu bir kek yapabilmek için ufak ayrıntıları gözden kaçırmamak birinci koşuldur. Bu ayrıntılara çırpma süresi ve şekli, kullanılan malzemelerin ısıları ve cinsleri de dahildir. Bununla birlikte pastacılıkta geliştirilmiş birçok farklı çeşidi olduğundan kekin nasıl bir kıvama sahip olacağı da değişkenlik gösterir. Kek pişirmenin öncelikli kurallarından bir diğeri de hamuru doğru kıvama gelene dek çırpmaktır. İçindeki hava kabarcıkları ne kadar yoğun ve doğru oranda olursa mamul de o denli güzel ve ipeksi bir dokuya sahip olur.</p><br>
+              <p>Peki, gerçekten <b>kusursuz bir kek yapmanın püf noktaları</b> nelerdir?</p><br>
+              <h2>Kek Yapmanın Püf Noktaları</h2><br>
+              <ul>
+              <li> Kek malzemeleri oda sıcaklığında olmalıdır.</li>
+              <li>Tarif ölçülerine uyulmalıdır.</li>
+              <li>Malzemeler doğru sıra ile eklenmelidir.</li>
+              <li>Kuru malzemeler elenmelidir.</li>
+              <li> Sıvılar yüksek hızda çırpılmalı; katılar yavaşça karıştırılmalıdır.</li>
+              <li> Kek kalıbı yağlanıp unlanmalıdır.</li>
+              <li>Kek yapmadan önce fırın ısıtılmalıdır.</li>
+              <li> Kek pişerken fırın kapağı açılmamalıdır.</li>
+              <li>Kek fırından alınınca kalıpta soğutulmalıdır.</li>
+              </ul>`,
+              image: "photos/kek.jpg"
+          },
+          content2: {
+            title: "Cevizlerin Sağlığa Faydaları",
+            content: `<h2>Ceviz Hangi Hastalıklara İyi Gelir?</h2><br>
+            <p>Ceviz, Juglandaceae ailesine ait Juglans cinsinden geleneksel olarak ağaçlarda yetişen bir yemiş türüdür. Genellikle ceviz ağacının meyvesi olarak bilinir ve sert bir kabuğun içinde yer alan yenilebilir bir iç kısmı vardır. Ceviz, besleyici değeri yüksek olan bir gıda maddesidir ve birçok faydalı bileşeni içerir.</p>
+            <p>Cevizlerin sağlık açısından birçok faydası bulunur. Cevizin özellikle omega-3 yağ asitleri, protein, lif, antioksidanlar ve çeşitli vitaminler içermesi nedeniyle kalp sağlığı, beyin fonksiyonları, bağışıklık sistemini destekleme gibi konularda olumlu etkileri olabileceği düşünülmektedir. Cevizin lezzetli tadı, salatalar, tatlılar, ekmekler ve atıştırmalıklarda yaygın olarak kullanılmasına da neden olur.</p><br>
+            <p>Peki cevizin faydaları nelerdir? Ceviz yemek neye iyi gelir?</p><br>
+            <h2>Cevizin Faydaları</h2>
+            <ul>
+            Kalp sağlığını destekler.
+<li>Beyin fonksiyonlarını geliştirir.</li>
+<li>Antioksidan zenginidir.</li>
+<li>Bağışıklık sistemini güçlendirir.</li>
+<li>Kanser riskini azaltabilir.</li>
+<li>Cilt ve saç sağlığını destekler.</li>
+<li>Kilo kontrolüne yardımcı olabilir.</li>
+<li>Depresyon etkilerini hafifletir.</li>
+<li>Uyku kalitesini yükseltir.</li>
+<li>Üreme sağlığını destekler.</li>
+            </ul>`,
+            image: "photos/ceviz.jpg"
+        },
+        content3: {
+            title: "Türk Kahvesi Faydaları: Her Gün İçmek Neye İyi Gelir?",
+            content: `<h2>Türk Kahvesinin Sizi Şaşırtacak Faydaları</h2><br>
+            <p>Türk kahvesi, kahve çekirdeklerinin öğütülmesi ve kavrulması ile elde edilen tozun, su ve isteğe göre şekerle pişirilmesi ile elde edilir. Bilinen granül kahvelerin aksine demlenerek değil pişirilerek hazırlanan içecek, sıcak olarak küçük fincanlarda servis edilir. Geçmişi Habeşistan’a dayanan kahve, 16. yüzyılda Osmanlı sarayına girer ve o tarihten bu yana Türk kültürünün vazgeçilmezi olmayı sürdürür. Peki, Türk kahvesi içmenin faydaları nelerdir?</p><br>
+            <h2>Türk Kahvesinin Faydaları</h2>
+            <ul>
+           <li> Bağırsak, meme, pankreas, kalın bağırsak, rahim iç zarı kanser risklerini azaltır.
+           <li>Kolesterolü düşürür.</li>
+           <li>%40 ağrı kesici etkisi vardır.</li>
+           <li>Tip2 diyabet riskini azaltır.</li>
+           <li>Parkinson hastalığını önler.</li>
+           <li> Depresyona iyi gelir.</li>
+           <li> Enerji ve zindelik verir.</li>
+           <li> Hafızayı güçlendirir.</li>
+           <li> Beyin sağlığına iyi gelir.</li>
+           <li>Siroz riskini %50 azaltır.</li>
+            </ul><br>
 
+            <p><b>En doğru bilgiler ve sağlıklı sonuçlar için uzman doktor desteği alınız. İçeriğimizde yer alan bilgiler reçete niteliği taşımaz. Sağlıklı günler dileriz…</b></p>
+            `,
+            image: "photos/kahve.jpg"
+        }
+      };
+
+      function getParameterByName(name, url = window.location.href) {
+          name = name.replace(/[\[\]]/g, '\\$&');
+          const regex = new RegExp(`[?&]${name}(=([^&#]*)|&|#|$)`);
+          const results = regex.exec(url);
+          if (!results) return null;
+          if (!results[2]) return '';
+          return decodeURIComponent(results[2].replace(/\+/g, ' '));
+      }
+
+      const contentKey = getParameterByName('content');
+      const blogContent = blogPosts[contentKey];
+
+      if (blogContent) {
+          document.getElementById('blog-detail-title').innerText = blogContent.title;
+          document.getElementById('blog-detail-image').src = blogContent.image;
+          document.getElementById('blog-detail-text').innerHTML = blogContent.content;
+      }
+
+      const backButton = document.getElementById('back-button');
+      backButton.addEventListener('click', function() {
+          window.history.back();
+      });
+  });
+</script>
 
 <script src="Js.js"></script>
 
