@@ -520,7 +520,7 @@ padding: 0,1rem;
 
 .item {
   width: 30%;
-  height: 30rem;
+  height: 25rem;
   margin: 5px;
   border: 1px solid #ccc;
   padding: 1px;
@@ -533,7 +533,69 @@ padding: 0,1rem;
   height: auto;
 }
 
+.footer1 {
+  background-color:var(--ikinci_renk);
+  text-align: center;
+  height: min-content;
+  margin-top: 95rem;
+}
 
+
+.footer1 .share {
+  padding: 2rem 0;
+}
+.footer1 .share a {
+  width: 5rem;
+  height: 5rem;
+  line-height: 5rem;
+  color: #000000;
+  font-size: 2rem;
+  border: var(--border);
+  border-radius: 50%;
+  margin: 0.3rem;
+}
+
+.footer1 .share a:hover {
+  background-color:#ff0033; color: #000000;
+  
+}
+
+.footer1 .links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+ 
+.footer1 .links a {
+  background-color: var(--main-color);
+  padding: 0.7rem 2rem;
+  color: #ffffff;
+  font-size: 2rem;
+  border: var(--border);
+}
+
+.footer1 .links a:hover {
+  background-color:#B9D3C7;
+  opacity: 0.7;
+  color:#000000;
+}
+
+.footer1 .links a.active {
+  background-color:#E2F2BB; color: #000000;
+}
+
+.footer1 .credit {
+  font-size: 1.7rem;
+  color: #fff;
+  font-weight: 300;
+  padding-top: 1.5rem;
+}
+
+.footer1 .credit span {
+  color:#000000;
+}
+/*! footer end  */
 /*kategori menu bitti*/
 /*tarifler sayfası bitti*/
 

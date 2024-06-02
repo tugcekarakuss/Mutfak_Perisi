@@ -26,6 +26,7 @@
         <!--Header bitti-->
         <!--başlık başladı-->
         <section>
+            <div class="clearfix">
           <div class="kategori">
             <h3>MUTFAKTA YOLCULUK: LEZZET VE SAĞLIK</h3>
             <p>Merhaba! Mutfak dünyasına hoş geldiniz. Burası lezzet dolu bir yolculuğa çıkacağınız, yaratıcı tariflerin ve mutfak sırlarının paylaşıldığı bir mekan. Kendinizi mutfakta periler gibi hissetmek için buradayız. Tariflerimiz, ipuçlarımız ve mutfak deneyimlerimizle sizi büyülü bir lezzet serüvenine davet ediyoruz.</p>
@@ -39,55 +40,92 @@
                 <ul id="categories">
                     <li onclick="filterCategory('all')">Tüm Kategoriler</li>
                     <li onclick="filterCategory('corba')"><a id="corba">Çorbalar</a></li>
-                    <li onclick="filterCategory('sulu')"><a id="pilav">Sulu Yemekler</a></li>
-                    <li onclick="filterCategory('pilav')">Pilavlar</li>
-                    <li onclick="filterCategory('salata')">Salatalar</li>
-                    <li onclick="filterCategory('et')">Et Yemekleri</li>
-                    <li onclick="filterCategory('tavuk')">Tavuk Yemekleri</li>
-                    <li onclick="filterCategory('kofte')">Köfte Çeşitleri</li>
-                    <li onclick="filterCategory('tatlı')">Tatlılar</li>
+                    <li onclick="filterCategory('sulu')"><a id="sulu">Sulu Yemekler</a></li>
+                    <li onclick="filterCategory('pilav')"><a id="pilav">Pilavlar</a></li>
+                    <li onclick="filterCategory('salata')"><a id="pilav">Salatalar</a></li>
+                    <li onclick="filterCategory('et')"><a id="pilav">Et Yemekleri</a></li>
+                    <li onclick="filterCategory('tavuk')"><a id="pilav">Tavuk Yemekleri</a></li>
+                    <li onclick="filterCategory('kofte')"><a id="pilav">Köfte Çeşitleri</a></li>
+                    <li onclick="filterCategory('tatlı')"><a id="pilav">Tatlılar</a></li>
                 </ul>
             </div>
             <div class="content">
-                <div class="item corba">
+                <div class="item corba"data-title="Mercimek Çorbası" data-details="Mercimek Çorbası tarifi ayrıntıları...">
                     <img src="photos/corba.jpg" alt="Resim 1">
-                    <p>Kategori 1 - İçerik 1</p>
+                    <p>Mercimek Çorbası</p>
                 </div>
                 <div class="item pilav">
-                    <img src="resim2.jpg" alt="Resim 2">
-                    <p>Kategori 2 - İçerik 2</p>
+                    <img src="https://yemek.com/_next/image/?url=https%3A%2F%2Fcdn.yemek.com%2Fmnresize%2F1250%2F833%2Fuploads%2F2015%2F12%2Fdomatesli-pilav-yemekcom.jpg&w=1920&q=75" alt="Resim 4">
+                    <p>Domatesli Pilav</p>
                 </div>
-                <div class="item category3">
-                    <img src="resim3.jpg" alt="Resim 3">
-                    <p>Kategori 3 - İçerik 3</p>
+                <div class="item salata">
+                    <img src="https://yemek.com/_next/image/?url=https%3A%2F%2Fcdn.yemek.com%2Fmnresize%2F1250%2F833%2Fuploads%2F2023%2F12%2Fmor-lahana-salatasi-one-cikan.jpg&w=1920&q=75" alt="Resim 5">
+                    <p>Mor Lahana Salatası</p>
                 </div>
-                <div class="item category1">
-                    <img src="resim4.jpg" alt="Resim 4">
-                    <p>Kategori 1 - İçerik 4</p>
+                <div class="item corba">
+                    <img src="https://yemek.com/_next/image/?url=https%3A%2F%2Fcdn.yemek.com%2Fmnresize%2F1250%2F833%2Fuploads%2F2024%2F01%2Fyesil-mercimek-corbasi-yemekcom.jpg&w=1920&q=75" alt="Resim 2">
+                    <p>Yeşil Mercimek Çorbası</p>
                 </div>
-                <div class="item category2">
-                    <img src="resim5.jpg" alt="Resim 5">
-                    <p>Kategori 2 - İçerik 5</p>
+                <div class="item sulu">
+                    <img src="https://yemek.com/_next/image/?url=https%3A%2F%2Fcdn.yemek.com%2Fmnresize%2F1250%2F833%2Fuploads%2F2021%2F06%2Fsulu-patates-yemegi-one-cikan.jpg&w=1920&q=75" alt="Resim 5">
+                    <p>Sulu Patates Yemeği</p>
                 </div>
-                <div class="item category2">
-                    <img src="resim5.jpg" alt="Resim 5">
-                    <p>Kategori 2 - İçerik 5</p>
+                <div class="item pilav">
+                    <img src="https://yemek.com/_next/image/?url=https%3A%2F%2Fcdn.yemek.com%2Fmnresize%2F1250%2F833%2Fuploads%2F2018%2F10%2Farpa-sehriyeli-pirinc-pilavi-yemekcom.jpg&w=1920&q=75" alt="Resim 5">
+                    <p>Arpa Şehriyeli Pirinç Pilavı</p>
                 </div>
-                <div class="item category2">
-                    <img src="resim5.jpg" alt="Resim 5">
-                    <p>Kategori 2 - İçerik 5</p>
+                
+                <div class="item salata">
+                    <img src="https://yemek.com/_next/image/?url=https%3A%2F%2Fcdn.yemek.com%2Fmnresize%2F1250%2F833%2Fuploads%2F2021%2F05%2Ftablaci-salatasi-one-cikan.jpg&w=1920&q=75" alt="Resim 5">
+                    <p>Adanalıyık: Tablacı Salatası</p>
                 </div>
-                <div class="item category2">
-                    <img src="resim5.jpg" alt="Resim 5">
-                    <p>Kategori 2 - İçerik 5</p>
+                <div class="item et">
+                    <img src="https://yemek.com/_next/image/?url=https%3A%2F%2Fcdn.yemek.com%2Fmnresize%2F1250%2F833%2Fuploads%2F2024%2F03%2Fcokertme-kebabi-yemekcom.jpg&w=1920&q=75" alt="Resim 5">
+                    <p>Çökertme Kebabı</p>
                 </div>
-                <div class="item category2">
-                    <img src="resim5.jpg" alt="Resim 5">
-                    <p>Kategori 2 - İçerik 5</p>
+                <div class="item et">
+                    <img src="https://yemek.com/_next/image/?url=https%3A%2F%2Fcdn.yemek.com%2Fmnresize%2F1250%2F833%2Fuploads%2F2023%2F01%2Flokanta-usulu-et-sote-sunum-yemekcom.jpg&w=1920&q=75" alt="Resim 5">
+                    <p>Et Sote</p>
+                </div>
+                <div class="item kofte">
+                    <img src="https://yemek.com/_next/image/?url=https%3A%2F%2Fcdn.yemek.com%2Fmncrop%2F940%2F625%2Fuploads%2F2022%2F04%2Fkizartmadan-kofteli-patates-dizme-onecikan.jpg&w=1920&q=75" alt="Resim 5">
+                    <p>Köfteli Patates Dizme</p>
+                </div>
+                <div class="item tavuk">
+                    <img src="https://yemek.com/_next/image/?url=https%3A%2F%2Fcdn.yemek.com%2Fmnresize%2F1250%2F833%2Fuploads%2F2024%2F01%2Ffirinda-soslu-tavuk-baget-onecikan.jpg&w=1920&q=75" alt="Resim 5">
+                    <p>Fırında Soslu Tavuk Baget</p>
+                </div>
+                <div class="item tatlı">
+                    <img src="https://yemek.com/_next/image/?url=https%3A%2F%2Fcdn.yemek.com%2Fmncrop%2F940%2F625%2Fuploads%2F2016%2F03%2Fkupta-kadayifli-muhallebi-yemekcom.jpg&w=1920&q=75" alt="Resim 5">
+                    <p>Kupta Kadayıflı Muhallebi</p>
+                </div>
+                <div class="item sulu">
+                    <img src="https://yemek.com/_next/image/?url=https%3A%2F%2Fcdn.yemek.com%2Fmnresize%2F1250%2F833%2Fuploads%2F2015%2F06%2Fturlu-tarifi-yeni-one-cikan.jpg&w=1920&q=75" alt="Resim 5">
+                    <p>Türlü</p>
+                </div>
+                <div class="item tavuk">
+                    <img src="https://yemek.com/_next/image/?url=https%3A%2F%2Fcdn.yemek.com%2Fmnresize%2F1250%2F833%2Fuploads%2F2021%2F03%2Ffirinda-tavuk-sis-asama-one-cikan.jpg&w=1920&q=75" alt="Resim 5">
+                    <p>Fırında Tavuk Şiş</p>
+                </div>
+                <div class="item kofte">
+                    <img src="https://yemek.com/_next/image/?url=https%3A%2F%2Fcdn.yemek.com%2Fmnresize%2F1250%2F833%2Fuploads%2F2016%2F12%2Fakcaabat-koftesi-one-cikan.jpg&w=1920&q=75" alt="Resim 5">
+                    <p>Akçaabat Köftesi</p>
+                </div>
+                <div class="item tatlı">
+                    <img src="https://yemek.com/_next/image/?url=https%3A%2F%2Fcdn.yemek.com%2Fmnresize%2F1250%2F833%2Fuploads%2F2024%2F02%2Firmikli-revani-yemekcom.jpg&w=1920&q=75" alt="Resim 5">
+                    <p>İrmikli Revani</p>
+                </div>
+                <div class="item corba">
+                    <img src="https://yemek.com/_next/image/?url=https%3A%2F%2Fcdn.yemek.com%2Fmnresize%2F1250%2F833%2Fuploads%2F2024%2F02%2F12-lebeniye-yemekcom.jpg&w=1920&q=75" alt="Resim 3">
+                    <p>Lebeniye Çorbası</p>
+                </div>
+                <div class="item tatlı">
+                    <img src="https://yemek.com/_next/image/?url=https%3A%2F%2Fcdn.yemek.com%2Fmnresize%2F1250%2F833%2Fuploads%2F2021%2F08%2Fkazandibi-yemekcom.jpg&w=1920&q=75" alt="Resim 5">
+                    <p>Kazandibi</p>
                 </div>
             </div>
         </div>
-      <script src="Js.js"></script>
+        </div>
 
          <!--menü bitti-->
 
@@ -95,7 +133,7 @@
          
          
    <!--footer başladı -->
-   <section class="footer">
+   <section class="footer1">
     <div class="share"> 
       <a href="https://www.linkedin.com/in/tugceekarakus/" target="_blank" class="fa-brands fa-linkedin"></a>
       <a href="https://github.com/Tuvci" target="_blank" class="fab fa-github"></a>
@@ -113,7 +151,7 @@
       created by <span>Tuğçe Karakuş</span> | all rigths reserved
     </div>
   </section>
-
+  <script src="Js.js"></script>
 <!--footer başladı -->
 </body>
 </html>
