@@ -187,32 +187,23 @@ padding: 0,1rem;
 /*menu bitti*/
 
  /*blog başladı*/
-
  .blogs .box-container .content .readmore{
   color: #333;
-  
-  font-size: 2rem;
-    
+  font-size: 2rem; 
 }
 .blogs .box-container .content .readmore:hover {
   color:#daa07c;
 }
-
-
-
-
  .blogs .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
   gap: 1.5rem;
 }
-
 .blogs .box-container .box {
   background-color:var(--vurgu_renk);
   border-radius: 3rem;
   object-fit:fill;
 }
-
 .blogs .box-container .box .image {
   height: 25rem;
   overflow: hidden;
@@ -220,43 +211,32 @@ padding: 0,1rem;
   border-top-left-radius: 3rem;
   border-top-right-radius: 3rem;
 }
-
 .blogs .box-container .box .image img {
   height: 100%;
   object-fit: cover;
   width: 100%;
 }
-
 .blogs .box-container .box:hover .image img {
   transform: scale(1.2);
 }
-
 .blogs .box-container .box .content {
   padding: 2rem;
 }
-
 .blogs .box-container .box .content .title {
   line-height: 1;
   font-size: 2.6rem;
-  
-
 }
-
-
 .blogs .box-container .box .content span {
   display: block;
   padding-top: 1rem;
   font-size: 1.25rem;
 }
-
 .blogs .box-container .box .content p {
   font-size: 1.5rem;
   line-height: 1.8;
   color: #0d0d0d;
   padding: 1rem 0;
 }
-
-
 .dahası {
   display: flex;
   justify-content: flex-start;
@@ -269,14 +249,11 @@ padding: 0,1rem;
     flex-wrap: wrap;
     column-gap: 2rem;
   }
-  
   .about .row .image {
     flex: 1 1 45rem;
   }
-  
   .about .row img {
     width: 100%;
-   
   }
   
   .about .row .content {
@@ -390,14 +367,13 @@ padding: 0,1rem;
   }
  /*iletişim bitti*/
 
- /*! footer start  */
+ /* footer başladı  */
 .footer {
   background-color:var(--ikinci_renk);
   text-align: center;
   height: min-content;
   
 }
-
 
 .footer .share {
   padding: 2rem 0;
@@ -412,7 +388,6 @@ padding: 0,1rem;
   border-radius: 50%;
   margin: 0.3rem;
 }
-
 .footer .share a:hover {
   background-color:#ff0033; color: #000000;
   
@@ -453,11 +428,11 @@ padding: 0,1rem;
 .footer .credit span {
   color:#000000;
 }
-/*! footer end  */
+/* footer bitti  */
 /*index sayfası bitti*/
 
 
-/*tarigler sayfası başladı*/
+/*tarifler sayfası başladı*/
 .kategori {
   background-image: url(photos/tarif.jpg);
   background-position: center ;
@@ -639,7 +614,7 @@ padding: 0,1rem;
 .footer1 .credit span {
   color:#000000;
 }
-/*! footer end  */
+/*! footer bitti  */
 /*kategori menu bitti*/
 /*tarifler sayfası bitti*/
 
