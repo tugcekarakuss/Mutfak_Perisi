@@ -6,6 +6,8 @@
 
 Mutfak Perisi, kullanıcılara çeşitli yemek tarifleri ve mutfak püf noktaları sunarak yemek yapmayı daha keyifli ve kolay hale getirmeyi hedefler. Bu site sayesinde kullanıcılar, farklı lezzetleri keşfedebilir ve kendi mutfaklarında deneyebilirler.
 
+
+![Açıklama](https://github.com/tugcekarakuss/Mutfak_Perisi/raw/main/site-resmi.png)
 ## Özellikler
 
 - **Kategorilere Göre Tarifler**: Çorbalar, sulu yemekelr, tatlılar gibi farklı kategorilerde tarifler.
