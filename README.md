@@ -14,7 +14,7 @@ Mutfak Perisi aims to make cooking more enjoyable and easier by providing users 
 - **Blog**: Insights into the hidden benefits of various foods, kitchen tips, and tricks.
 - **Videos**: Cooking videos for visual guidance.
 
-#TR: Mutfak Perisi 
+# Mutfak Perisi 
 
 **Mutfak Perisi**, yemek tarifleri ve mutfak ipuçları sunan hayali bir yemek sitesidir. Bu proje, yemek yapmayı seven herkes için zengin bir kaynak sunmayı amaçlamaktadır.
 
